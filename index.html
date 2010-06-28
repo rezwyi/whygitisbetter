@@ -74,16 +74,15 @@
 
 	    <div class="span-24">
 					<div class="text intro">
-		        This site is here because I seem to
-						be spending a lot of time lately defending Gitsters against 
-						charges of fanboyism, bandwagonism
-						and koolaid-thirst.  So, here is why people are switching to Git from
-						X, and why you should too.  Just click on a reason to view it.
+            Данный ресурс здесь потому, что я, кажется, трачу много времени на защиту пользователей
+            Git, обвиняемых в fanboyism, bandwagoism и жажде koolaid'а. Итак, вот почему люди
+            переходят на использование Git вместо X, и почему вы тоже должны. Просто щелкните
+            на любой причине, чтобы ее раскрыть и посмотреть.
 					</div>
 					
 					<div class="expand_collapse_links">
-					  <a href="#" class="expand_all">Expand all</a> |
-					  <a href="#" class="collapse_all">Collapse all</a>
+					  <a href="#" class="expand_all">Раскрыть все</a> |
+					  <a href="#" class="collapse_all">Свернуть все</a>
 					</div>
 	    </div>
 
@@ -96,44 +95,45 @@
 					</div>
 
 	        <h2>
-          <a name="cheap-local-branching" href="#cheap-local-branching">Cheap Local Branching</a>
+          <a name="cheap-local-branching" href="#cheap-local-branching">Дешевые локальные ветвления</a>
 	        </h2>
 					<div class="contents">
 						
 						<div class="text">
-							Probably Git's most compelling feature that really makes it stand
-							apart from nearly every other SCM out there is its branching
-							model.  It is completely different from all of the models I'm 
-							comparing it to here, most of which recommend that the best branch
-							is basically a clone of the repository in a new directory.
+              Самая возможно убедительная возможность Git, выделяющая ее из
+              остальных СУВ, это модель ветвления. Она полностью отличается от
+              всех других, которые я сравниваю здесь, большинство из которых
+              рекомендуют, что лучшая ветка это копия репозитория в отдельной
+              директории.
 						</div>
 						
 						<div class="text">
-							Git does not work like that.  Git will allow you to have multiple
-							local branches that can be entirely independent of each other and
-							the creation, merging and deletion of those lines of development
-							take seconds.
+              Git работает иначе. Она позволяет вам иметь множество локальных
+              веток, абсолютно независящих друг от друга, и создание, слияние
+              и удаление этих линий разработки занимает секунды.
 						</div>
 						
 						
 						<div class="text">
-							This means that you can do things like:
+              Это означает, что вы можете делать вещи, подобные этим:
 							<ul>
-								<li>Create a branch to try out an idea, commit
-									a few times, switch back to where you branched from, apply a patch, 
-									switch back to where you are experimenting, then merge it in.
+								<li>Создать ветку, чтобы попробовать новую идею, выполнить несколько
+                  коммитов, переключиться обратно, откуда начали экпериментировать,
+                  принять патч, снова переключиться туда, где выполняли эксперименты,
+                  и затем объединить все вместе.
 								</li>
-								<li>Have a branch that always contains only what goes to production,
-									another that you merge work into for testing and several smaller
-									ones for day to day work
+								<li>Иметь ветку, которая всегда содержит то, что пойдет на продакшн,
+                  другую, чтобы объединять наработки для тестирования и несколько 
+                  небольших для ежедневной работы.
 								</li>
-								<li>Create new branches for each new feature you're working on, so
-									you can seamlessly switch back and forth between them, then delete
-									each branch when that feature gets merged into your main line.
+								<li>Создавать отдельные ветки для каждой новой возможности, над которой 
+                  работаете, а также беспрепятственно переключаться между ними туда
+                  и обратно, а затем удалить каждую ветку после того, как изменения
+                  попадут в основную линию разработки.
 								</li>
-								<li>Create a branch to experiment in, realize it's not going to
-									work and just delete it, abandoning the work&mdash;with nobody else
-									ever seeing it (even if you've pushed other branches in the meantime)
+								<li>Создать ветку для экспериментов, понять, что это не будет работать и
+                  просто удалить их, отказавшись от изменений &mdash; и никто другой это не
+                  увидит (даже если вы в это время выложили другие ветки).
 								</li>
 							</ul>
 						</div>
@@ -141,18 +141,19 @@
 						<img src="images/branches.png" alt="branches flowchart"/>
 						
 						<div class="text">
-							Importantly, when you push to a remote repository, you do <em>not</em>
-							have to push all of your branches.  You can only share one of your
-							branches and not all of them.  This tends to free people to try
-							new ideas without worrying about having to plan how and when they
-							are going to merge it in or share it with others.
+              Важно, вы выкладываете изменения в удаленный репозиторий, туда
+              <em>не</em> попадут все ваши ветки. Вы можете выложить только
+              одну из ваших веток, а не все сразу. Это, как правило, чтобы
+              освободить людей, которые пробуют новые идеи, от постоянного
+              планирования как и когда они будут выполнять слияние или делится
+              с остальными.
 						</div>
 						
 						<div class="text">
-							You <em>can</em> find ways to do some of this with other systems, but the work
-							involved is much more difficult and error-prone.  Git makes this
-							process incredibly easy and it changes the way most developers
-							work when they learn it.
+						  Вы можете отыскать пути, как сделать подобное в других системах, однако
+              это намного сложнее и подвержено ошибкам. Git делает этот процесс
+              невероятно простым и меняет подход к работе разработчиков, когда
+              они знакомятся с ней.
 						</div>
 						
 						<!-- TODO : (short screencast showing the awesomeness of git branches) -->
