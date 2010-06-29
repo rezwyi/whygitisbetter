@@ -175,40 +175,41 @@
 						<span class="lang perforce">perforce</span>
 					</div>
 	        <h2>
-          <a name="everything-is-local" href="#everything-is-local">Everything is Local</a>
+          <a name="everything-is-local" href="#everything-is-local">Все локально</a>
 	        </h2>
 					<div class="contents">	
 
 						<div class="text">
-							This is basically true of all the distributed SCMs, but in my
-							experience even more so with Git.  There is very little outside
-							of 'fetch', 'pull' and 'push' that communicates in any way with 
-							anything other than your hard disk.
+              В основном это касается всех распределенных СУВ, но по моему
+              опыту, Git в большей степени. В ней есть немного внешнего в
+              'fetch', 'pull' и 'push', которые взаимодействуют в любом случае
+              ни с чем другим, кроме вашего жесткого диска.
 						</div>
 
 						<div class="text">
-							This not only makes most operations much faster than you may
-              be used to, but it also allows you to work on stuff offline.
-              That may not sound like a big deal, but I'm always amazed at
-              how often I actually do work offline.  Being able to branch,
-              merge, commit and browse history of your project while on 
-              the plane or train is very productive.
+              Это не единственное, что делает большинство операций, которые
+              вы возоможно тоже используете, более быстрыми, также выполнять
+              работу в оффлайн-режиме. Возможно это не звучит, как нечто
+              такое, но я всегда поражаюсь тому, как часто я работаю оффлайн.
+              Возможность создать ветку, выполнить слияние или коммит и 
+              просматривать историю вашего проекта пока вы находитесь
+              в самолете или поезде, позволяет быть очень продуктивным.
 						</div>
 						
 						<div class="center"><img style="width: 500px" src="images/local-remote.png" alt="local repo to remote repo flowchart" /></div>
 
 						<div class="text">
-							Even in Mercurial, common commands like 'incoming' and 'outgoing' hit 
-							the server, whereas with Git you can 'fetch' all the servers data
-							before going offline and do comparisons, merges and logs of data
-							that is on the server but not in your local branches yet.
+              Даже в Mercurial, команды вроде 'incoming' и 'outgoing'
+              взаимодействуют с сервером, в то время как с Git вы можете
+              получить ('fetch') все данные с сервера перед тем, как перейти в 
+              оффлайн режим, и выполнять сравнения, слияния и логирования
+              данных на сервере, но еще не в ваших локальных ветках.
 						</div>
 												
 						<div class="text">
-							This means that it's very easy to have copies of not only your
-							branches, but also of everyone's branches that are working with
-							you in your Git repository without having to mess your own stuff
-							up.
+              Это значит, что очень просто иметь копии не только ваших веток,
+              но и всех остальных, существующих в вашем репозитории без 
+              беспорядка в ваших материалах.
 						</div>
 						
 					</div>
