@@ -223,34 +223,35 @@
 					</div>
 			
 	        <h2>
-          <a name="git-is-fast" href="#git-is-fast">Git is Fast</a>
+          <a name="git-is-fast" href="#git-is-fast">Скорость</a>
 	        </h2>
 	
 					<div class="contents">
 						<div class="text">
-							Git is fast.  Everyone&mdash;even most of the hard core users of these
-							other systems&mdash;generally give Git this title.  With Git, all
-							operations are performed locally giving it a bit of a leg up on
-							SVN and Perforce, both of which require network access for certain operations.
-							However, even compared to the other DSCMs that also perform operations
-							locally, Git is pretty fast. 
+							Git очень быстрая. Все, даже очень продвинутые пользователи других
+              систем, отдают ей предпочтение в этом. В Git, все операции
+              выполняются локально, давая ей небольшое преимущество над Svn и
+              Perforce, обеим из которых требуется подключение к сети для
+              определенных операций. Так или иначе, даже сравнивая с 
+              распеределенными СУВ, которые выполняют операции локально, 
+              Git достаточно быстрая.
 						</div>
 					
 						<div class="text">
-							Part of this is likely because it was built to work on the Linux 
-							kernel, which means that it has had to deal effectively with large
-							repositories from day one.  Additionally, Git is written in C, reducing the
-							overhead of runtimes associated with higher-level languages.
-							Another reason that Git is so fast is that the primary developers
-							have made this a design goal of the application.
+              Отчасти это потому, что она создавалась для работы на ядром Linux,
+              а это значит, что она должна была справляться с большими репозиториями
+              с первого дня. Как дополнение, она написана на C, что сокращает 
+              накладные расходы со временем работы языков высокого уровня. Другая
+              причина высокой скрости Git заключается в том, что основные
+              разработчики сделали это целью проекта приложения.
 						</div>
 
 						<div class="text">
-							The following are a number of benchmarks that I performed on three
-							copies of the Django source code repository in 3 different SCMs:
-							Git, Mercurial and Bazaar.  I also tested some of this stuff in SVN,
-							but trust me, it's slower&mdash;basically take the Bazaar numbers and
-							then add network latency...
+              Ниже приведены сравнительные тесты, которые я выполнил с тремя
+              копиями исходного кода проекта Django, с помощью трех различных
+              СУВ: Git, Mercurial и Bazaar. Также я протестировал кое-что из этого
+              в Svn, но поверьте мне, это медленнее &mdash; возьмите показатели Bazaar
+              и добавьте к ним задержки сети...
 						</div>
 
             <table>  
@@ -277,10 +278,11 @@
 						</table>
 						
 						<div class="text">
-							The end result was that for everything but adding new files, Git
-							was fastest. (Also really large commits, which Hg was basically the
-							same at, but the commit I tested was so large that you're unlikely
-							to ever do anything like it&mdash;normal commits are much faster in Git.)
+              В итоге, везде, кроме добавления новых файлов, Git оказалась быстрее
+              (В том числе очень большие коммиты, где Hg показала похожие результаты,
+              но коммит, который я тестировал был настолько большим, который вам, 
+              скорее всего, не придется делать &mdash; обычные же коммиты быстрее в
+              Git).
 						</div>
 						
 						<table>
@@ -353,24 +355,25 @@
 						</table>
 					
 						<div class="text">
-							The cold and hot branching numbers are the numbers for the first
-							and second times that I branched a repo&mdash;the second number being
-							a branch with a hot disk cache.
+              "Холодные" и "горячие" показатели ветвлений являются первым и вторым
+              разом создания ветки в репозитории &mdash; второе создание имеет 
+              дело с дисковых кэшем.
 						</div>
 
 						<div class="text">
-							It should be noted that although the 'add' numbers are much slower,
-              this was for a massive add operation&mdash;over 2000 files.  For the
-              majority of what most people do on a daily basis, add ops in any
-              of these systems will only take a fraction of a second. All of the
-              other ops tested here (except for the large commit, possibly) are
-              more indicative of things you might actually do day to day.
+              Необхдимо заметить, что хотя показатели 'add' являются более
+              медленными, операция выполнялась для большого количества файлов,
+              более 2000. Для большей части того, что большинство людей 
+              совершают ежедневно, операции добавления будут занимать доли
+              секунды. Остальные операции, испытанные здесь (за исключением
+              больших коммитов), больше подходят под  ваши ежедневные.
 						</div>
 					
 					
 					<div class="text">
-						These numbers are really not difficult to recreate, simply clone the Django
-						project in each of the systems and try out the same commands in each.
+            Эти показатели не так трудно повторить, просто создайте клон
+            проекта Django с помощью каждой из систем, выполнив
+            следующие команды.
 						<ul>
 							<li><code>git clone git://github.com/brosner/django.git dj-git</code></li>
 							<li><code>hg clone http://hg.dpaste.com/django/trunk dj-hg</code></li>
@@ -390,20 +393,22 @@
 					</div>
 			
 	        <h2>
-          <a name="git-is-small" href="#git-is-small">Git is Small</a>
+          <a name="git-is-small" href="#git-is-small">Размер</a>
 	        </h2>
 	
 					<div class="contents">
 						<div class="text">
-							Git is really good at conserving disk space.  Your Git directory will 
-							(in general) barely be larger than an SVN checkout&mdash;in some cases
-							actually smaller (apparently a lot can go in those .svn dirs).
+              Git идеальна для экономии дискового пространства. Ваш каталог Git
+              (как правило) едва будет больше, чем Svn &mdash; в некоторых случаях
+              даже меньше (видимо многое может пойти в .svn каталоги).
 						</div>
 					
 						<div class="text">
 							The following numbers were taken from clones of the Django project
 							in each of its semi-official Git mirrors at the same point in 
 							its history.
+              Следующие цифры были взяты из клонирований проекта Django в каждом
+              из официальных зеркал Git, с одинакой точки в истории.
 						</div>
 					
 						<table>
