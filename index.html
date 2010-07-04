@@ -550,31 +550,33 @@
 				</div>
 		
        	<h2>
-        <a name="any-workflow" href="#any-workflow">Any Workflow</a>
+        <a name="any-workflow" href="#any-workflow">Любые схемы рабочих процессов</a>
        	</h2>
 
 				<div class="contents">
 					
 					<div class="text">
-						One of the amazing things about Git is that because of its distributed
-						nature and super branching system, you can easily implement pretty
-						much any workflow you can think of relatively easily.
+            Одной из замачательных особенностей Git является то, что из-за
+            ее распределенного характера и отличной системы ветвлений, вы
+            можете легко реализовать практически любую схему рабочего процесса,
+            которую только можете представить.
 					</div>
 					
-					<h3>Subversion-Style Workflow</h3>
+					<h3>Схема в стиле Subversion</h3>
 					
 
 					<div class="text">
-						A very common Git workflow, especially from people transitioning
-						from a centralized system, is a centralized workflow.  Git will 
-						not allow you to push if someone has pushed since the last time
-						you fetched, so a centralized model where all developers push to
-						the same server works just fine.
+            Очень распространенной схемой Git, особенно для людей перешедших
+            с централизованных систем, является централизованная схема. Git
+            не будет позволять выкладывать изменения, если кто-то выложил
+            свои с момента последнего получения данных с сервера (fetch), а
+            так централизованная модель, где все разработчики выкладывают
+            свои изменения на тот же сервер, работает на ура.
 					</div>
 					
 					<div class="center"><img src="images/workflow-a.png" alt="subversion-style workflow" /></div><br/>
 					
-					<h3>Integration Manager Workflow</h3>
+					<h3>Схема с менедежером</h3>
 
 					<div class="text">
 						Another common Git workflow is where there is an integration 
@@ -590,20 +592,20 @@
 					<h3>Dictator and Lieutenants Workflow</h3>
 
 					<div class="text">
-						For more massive projects, you can setup your developers similar to
-						the way the Linux kernel is run, where people are in charge of a
-						specific subsystem of the project ('lieutenants') and merge in all
-						changes that have to do with that subsystem.  Then another integrator
-						(the 'dictator') can pull changes from only his/her lieutenants and
-						push those to the 'blessed' repository that everyone then clones from
-						again.
+            Еще одна распространенна схема Git, где присутствует менеджер &mdash;
+            человек, который выполняет коммит в 'боевой' репозиторий. Заключается
+            в следующем: изменения выкладываются в независимые репозитории
+            менеджера и поступает запрос на него, чтобы он выложил ваши изменения.
+            Такую модель разработки, вы часто видите в open source проектах или
+            GitHub-репозитариях.
 					</div>
 
 					<div class="center"><img src="images/workflow-c.png" alt="dictator and lieutenants workflow" /></div><br/>
 					
 					<div class="text">
-						Again, Git is entirely flexible about this, so you can mix and 
-						match and choose the workflow that is right for you. 
+            Кроме того, Git очень гибкая в этом вопрос, так что вы можете
+            экспериментировать и выбрать свою схему, наиболее правильную
+            для вас.
           </div>
 					
 				</div>
