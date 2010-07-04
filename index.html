@@ -404,9 +404,6 @@
 						</div>
 					
 						<div class="text">
-							The following numbers were taken from clones of the Django project
-							in each of its semi-official Git mirrors at the same point in 
-							its history.
               Следующие цифры были взяты из клонирований проекта Django в каждом
               из официальных зеркал Git, с одинакой точки в истории.
 						</div>
@@ -447,36 +444,38 @@
 					</div>
 		
 	        <h2>
-          <a name="the-staging-area" href="#the-staging-area">The Staging Area</a>
+          <a name="the-staging-area" href="#the-staging-area">Подготовка к коммиту</a>
 	        </h2>
 					<div class="contents">
 						<div class="text">
-							Unlike the other systems, Git has what it calls the "staging area"
-							or "index".  This is an intermediate area that you can setup what
-							you want your commit to look like before you commit it.
+              В отличие от других систем, Git имеет нечто, что называется
+              "подготовка к коммиту" или "индекс". Это промежуточная стадия,
+              на которой вы формируете коммит таким, каким хотите его видеть,
+              перед тем как его выполнить.
 						</div>
 						<div class="text">
-							The cool thing about the staging area, and what sets Git apart 
-							from all these other tools, is that you can easily stage some of
-							your files as you finish them and then commit them without committing
-							all the modified files in your working directory, or having to list
-							them on the command line during the commit
+              Подготовка к коммиту классная штука, и что ставит Git отдельно
+              от других, это возможность просто подготовить некоторые файлы,
+              как вы закончите с ними, и выполнить коммит только их,
+              а не всех изменений, или выводить списком в командной строке
+              при выполнении коммита.
 						</div>
 						<div class="center"><img src="images/index1.png" alt="add commit workflow diagram" /></div>
 						
 						<div class="text">
-						  This also allows you to stage only portions of a modified file.  Gone are
-						  the days of making two logically unrelated modifications to a file before
-						  you realized that you forgot to commit one of them.  Now you can just stage
-						  the change you need for the current commit and stage the other change for
-						  the next commit.  This feature scales up to as many different changes to
-						  your file as you need.
+              Данная возомжность позволяте подготавливать только части измененного
+              файла. Прошло несколько дней после внесения двух несвязанных изменений
+              в файле, перед тем, как вы поняли, что забыли выполнить коммит одного
+              из них. Итак, вы можете подготовить необходимые изменения для текущего
+              коммита, а другие для следующего коммита. Эта возможность масштабируется
+              до любого количества различных изменений, которое вам потребуется.
 						</div>
 
 						<div class="text">
-							Of course, Git also makes it pretty easy to ignore this feature
-							if you don't want that kind of control&mdash;just slap a '-a' to your
-							commit command in order to add all changes to all files to the staging area.
+              Конечно же, Git позволяет игонорировать такую возможность, если вам
+              не нужен такого рода контроль &mdash; просто "нашлепайте" '-a' к 
+              команде 'commit' для того, чтобы подготовить для коммита все
+              модификации всех файлов.
 						</div>
 						
 						<div class="center"><img src="images/index2.png" alt="commit only workflow diagram" /></div>
